@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Three.js - Experiment</title>
+</head>
+<body>
+    <div id="landing">
+        <div>
+            <h1>Spherical Audio Visualizer</h1>
+
+            <div id="loader">
+                <div class="spinnerBlock">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+            <button id="landingButton" class="hidden">
+                    <span class='pulse-button'>listen</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="controls hidden" id="controls">
+        <div class="buttons">
+            <button>
+                <img id="mute" src="app/assets/img/mute.svg" alt="Mute">
+            </button>
+                
+            <button>
+                <img id="play-or-pause" src="app/assets/img/pause.svg" alt="Play">
+            </button>
+    
+            <button>
+                <img id="fullScreen" src="app/assets/img/full_screen.svg" alt="Full screen">
+            </button>
+        </div>
+
+        <div class="sliders">
+                <input id="shape" type="range" min="0.03" max="0.4" step="0.01" value="0.03">                
+        </div>
+    </div>
+
+    <p id="author" class="author">Erwann Letue <span class="separator">|</span> <a href="https://github.com/Eronne/threejs-audio-visualizer">Github</a></p>
+
+    <div id="main"></div>
+</body>
+</html>
+
